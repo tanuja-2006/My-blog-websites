@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Blog Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #f2f4f8;
+        }
+
+        header {
+            background: #243b55;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #141e30;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .blog {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        button {
+            background: #243b55;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #141e30;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Blog Website</h1>
+    <p>Welcome to My Personal Blog</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#blogs">Blogs</a>
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+</nav>
+
+<div class="container" id="home">
+
+    <h2>Welcome!</h2>
+    <p>Explore our latest blogs and articles.</p>
+
+    <div class="blog" id="blogs">
+        <h2>Technology</h2>
+        <p>Technology makes our life easier.
+        Learn new things every day.</p>
+        <button onclick="readMore()">Read More</button>
+    </div>
+
+    <div class="blog">
+        <h2>Education</h2>
+        <p>Education is the key to success.
+        Keep learning and growing.</p>
+        <button onclick="readMore()">Read More</button>
+    </div>
+
+    <div class="blog" id="login">
+        <h2>Login</h2>
+        <input type="email" placeholder="Enter Email">
+        <br><br>
+        <input type="password" placeholder="Enter Password">
+        <br><br>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div class="blog" id="register">
+        <h2>Register</h2>
+        <input type="text" placeholder="Enter Name">
+        <br><br>
+        <input type="email" placeholder="Enter Email">
+        <br><br>
+        <input type="password" placeholder="Create Password">
+        <br><br>
+        <button onclick="register()">Register</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 My Blog Website</p>
+</footer>
+
+<script>
+    function readMore() {
+        alert("Thank you for reading my blog!");
+    }
+
+    function login() {
+        alert("Login button clicked!");
+    }
+
+    function register() {
+        alert("Registration button clicked!");
+    }
+</script>
+
+</body>
+  </html>
